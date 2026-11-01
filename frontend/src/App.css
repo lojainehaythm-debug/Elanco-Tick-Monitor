@@ -144,13 +144,24 @@ a {
   letter-spacing: 1.5px;
 }
 
-.main-sections {
+ .main-sections {
   max-width: 1320px;
   margin: 65px auto;
   padding: 0 25px;
   display: grid;
-  grid-template-columns: 210px 1fr;
+  grid-template-columns: 210px minmax(0, 1fr);
   gap: 25px;
+  align-items: start;
+}
+
+.side-menu {
+  grid-column: 1;
+  grid-row: 1 / span 5;
+}
+
+.content-panel {
+  grid-column: 2;
+  min-width: 0;
 }
 
 .side-menu {
@@ -361,7 +372,7 @@ footer p {
 
 .guide-panel {
   grid-column: 2;
-  grid-row: 2;
+  
 }
 
 .contact-panel {
