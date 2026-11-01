@@ -64,10 +64,11 @@ function App() {
         <a className="brand" href="#home">ELANCO</a>
 
         <nav className="top-nav">
-          <a href="#map"><span>1</span> Interactive Map</a>
-          <a href="#guide"><span>2</span> Species Guide</a>
-          <a href="#contact"><span>3</span> Contact Us</a>
-        </nav>
+  <a href="#map"><span>1</span> Interactive Map</a>
+  <a href="#guide"><span>2</span> Species Guide</a>
+  <a href="#user-guide"><span>3</span> User Guide</a>
+  <a href="#contact"><span>4</span> Contact Us</a>
+</nav>
 
         <select className="language" aria-label="Language">
           <option>EN</option>
@@ -99,9 +100,10 @@ function App() {
             <p className="menu-title">EXPLORE</p>
             <a href="#map">01 — Interactive map</a>
             <a href="#guide">02 — Species guide</a>
-            <a href="#contact">03 — Contact us</a>
-            <a href="#report">04 — Report a sighting</a>
-          </aside>
+            <a href="#user-guide">03 — User guide</a>
+            <a href="#contact">04 — Contact us</a>
+            <a href="#report">05 — Report a sighting</a>
+</aside>
 
           <section id="map" className="content-panel map-panel">
             <div className="section-heading">
@@ -141,11 +143,96 @@ function App() {
             </div>
 
             <div className="seasonal">
+  <h3>Tick species recorded in the UK dataset</h3>
+  <p>These are the five species names included in the Elanco tick sightings data.</p>
+
+  <div className="guide-columns">
+    <div>
+      <h3>Marsh tick</h3>
+      <p><i>Ixodes apronophorus</i></p>
+      <p>Recorded in the Elanco dataset.</p>
+    </div>
+
+    <div>
+      <h3>Southern rodent tick</h3>
+      <p><i>Ixodes acuminatus</i></p>
+      <p>Recorded in the Elanco dataset.</p>
+    </div>
+
+    <div>
+      <h3>Passerine tick</h3>
+      <p><i>Dermacentor frontalis</i></p>
+      <p>Recorded in the Elanco dataset.</p>
+    </div>
+
+    <div>
+      <h3>Tree-hole tick</h3>
+      <p><i>Ixodes arboricola</i></p>
+      <p>Recorded in the Elanco dataset.</p>
+    </div>
+
+    <div>
+      <h3>Fox/badger tick</h3>
+      <p><i>Ixodes canisuga</i></p>
+      <p>Recorded in the Elanco dataset.</p>
+    </div>
+  </div>
+
+  <p>
+    Note: The dataset provides species names but does not include
+    detailed identification descriptions. Species identification
+    should be confirmed by a qualified expert.
+  </p>
+</div>
+                    
+            <div className="seasonal">
               <h3>Seasonal activity</h3>
               <p>Seasonal tick activity charts will appear here.</p>
             </div>
           </section>
 
+          <section id="user-guide" className="content-panel guide-panel">
+  <div className="section-heading">
+    <span>03</span>
+    <h2>How to use the website</h2>
+  </div>
+
+  <div className="guide-columns">
+    <div>
+      <h3>Explore the map</h3>
+      <p>
+        Open the interactive map to explore tick sightings across the UK.
+        Select a city or species filter to find the information you need.
+        Click a map marker to see the recorded sightings.
+      </p>
+    </div>
+
+    <div>
+      <h3>Learn about ticks</h3>
+      <p>
+        Visit the species guide to learn about the different ticks recorded
+        in the Elanco dataset and read useful prevention advice.
+      </p>
+    </div>
+
+    <div>
+      <h3>Report a sighting</h3>
+      <p>
+        Enter the date, location and species of the tick you found.
+        Submit the form to send your report to the backend.
+      </p>
+    </div>
+
+    <div>
+      <h3>View tick statistics</h3>
+      <p>
+        Explore the city statistics and weekly or monthly trends to
+        understand the recorded tick sightings.
+      </p>
+    </div>
+  </div>
+</section>
+             
           <section id="contact" className="content-panel contact-panel">
             <div className="section-heading">
               <span>03</span>
